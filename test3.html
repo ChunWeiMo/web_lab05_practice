@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>将值显示在 #result 中</title>
+</head>
+<body>
+    <div id="result">这里将显示值</div>
+    <button id="showValueButton">显示值</button>
+
+    <script>
+        var showValueButton = document.getElementById('showValueButton');
+
+        // 添加按钮点击事件监听器
+        showValueButton.addEventListener('click', function() {
+            // 获取 #result 元素的引用
+            var resultElement = document.getElementById('result');
+
+            // 设置 #result 元素的内容
+            resultElement.textContent = '这是要显示的值';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>获取按钮值</title>
+</head>
+<body>
+    <button class="operator">按钮 1</button>
+    <button class="operator">按钮 2</button>
+    <button class="operator">按钮 3</button>
+
+    <script>
+        var buttons = document.getElementsByClassName('operator');
+
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function() {
+                var buttonValue = this.textContent;
+                alert('按钮的值是：' + buttonValue);
+            });
+        }
+    </script>
+</body>
+</html>
